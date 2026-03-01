@@ -1,2 +1,37 @@
-# agent-workbench
-A personal development workbench template for safely and efficiently managing AI coding agents. It provides a Python-centered workflow and a checklist-driven approach to ensure structured, reliable development.
+# Agent Workbench（Personal）
+
+AIコーディングエージェント（Codex / Claude / Gemini など）を
+安全かつ効率的にマネージするための個人開発向けテンプレートです。
+Python中心のワークフローを前提としています。
+
+## このリポジトリの目的
+
+- エージェントの挙動を安定させる最小限の「憲法」（AGENTS.md）
+- ツール別の入口（profiles/）
+- 構造化された作業のための最小チェックリスト
+
+## 前提（Python）
+
+本テンプレートは `uv` を前提とします。
+
+環境同期：
+```
+uv sync
+```
+
+テスト実行（設定されている場合）：
+```
+uv run pytest
+```
+
+## エージェントの使い方
+
+- まず `AGENTS.md` を参照させる
+- 詳細な手順は `docs/` や `checklists/` に追記する
+- 挙動に問題があれば Issue を作成し、修正は PR で行う
+
+## 改善の方針
+
+エージェントの挙動が期待と異なる場合は「仕様の不備」とみなし、
+原因を特定した上で該当箇所（AGENTS.md / profiles / checklists）を修正する。
+修正は必ず PR 経由で行う。
